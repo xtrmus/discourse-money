@@ -1,0 +1,75 @@
+<br>
+
+{{#if (eq this.model.username this.currentUser.username)}}	
+			<div class="odemeformu">
+				<form {{ action 'createPayment' adsoyad paramiktari ibanpapara adres on='submit' }}>
+				<p>Para Çekme Alt Limiti : 50 TL</p>
+
+					<label>
+					{{ i18n 'discourse-money.adsoyad' }}
+					</label>
+					{{ input type="text" name='payment' value=adsoyad }}
+
+					<label>
+					{{ i18n 'discourse-money.paramiktari' }}
+					</label>
+					{{ input type="number" min="50" max="75" step="1" name='payment' value=paramiktari }}
+
+					<label>
+					{{ i18n 'discourse-money.ibanpapara' }}
+					</label>
+					{{ input type="text" name='payment' value=ibanpapara }}
+
+					<label>
+					{{ i18n 'discourse-money.hesapno' }}
+					</label>
+					{{ input type="number" name='payment' value=adres }}
+
+					<br>
+
+					<button type='submit' class='btn btn-primary'>
+					{{ i18n 'discourse-money.paracekmebutonu' }}
+					</button>
+				   
+				</form>
+				</div>
+{{/if}}		
+
+{{#if this.currentUser.admin}}	
+			<div class="odemeformu">
+				<form {{ action 'createPayment' adsoyad paramiktari ibanpapara adres on='submit' }}>
+				<p>Para Çekme Alt Limiti : 50 TL</p>
+
+					<label>
+					{{ i18n 'discourse-money.adsoyad' }}
+					</label>
+					{{ input type="text" name='payment' value=adsoyad }}
+
+					<label>
+					{{ i18n 'discourse-money.paramiktari' }}
+					</label>
+					{{ input type="number" min="50" max="75" step="1" name='payment' value=paramiktari }}
+
+					<label>
+					{{ i18n 'discourse-money.ibanpapara' }}
+					</label>
+					{{ input type="text" name='payment' value=ibanpapara }}
+
+					<label>
+					{{ i18n 'discourse-money.hesapno' }}
+					</label>
+					{{ input type="number" name='payment' value=adres }}
+
+					<br>
+
+					<button type='submit' class='btn btn-primary'>
+					{{ i18n 'discourse-money.paracekmebutonu' }}
+					</button>
+				   
+				</form>
+				</div>
+{{/if}}	
+
+
+
+<br>

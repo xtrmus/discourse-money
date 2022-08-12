@@ -1,0 +1,48 @@
+<br>
+
+{{#if this.currentUser.admin}}
+	<div class="odemeler">
+
+			
+				<table class="odemelerAdmin">
+					<thead>
+					  <tr>
+						<th>Kullanıcı Adı</th>
+						<th>Adı</th>
+						<th>Talep Edilen Para</th>
+						<th>IBAN/Papara</th>
+						<th>Hesap No</th>
+						<th>Tarih</th>
+						<th>Durum</th>
+						<th>Güncelle</th>
+						<th>Sil</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  {{#each payments as |payment|}}
+						{{#if (eq payment.durum "İşlem Aşamasında")}}
+							<tr>
+								<td>{{payment.kullaniciadi}}</td>
+								<td>{{payment.adsoyad}}</td>
+								<td>{{payment.paramiktari}}</td>
+								<td>{{payment.ibanpapara}}</td>
+								<td>{{payment.adres}}</td>
+								<td>{{payment.zaman}}</td>
+								<td>{{payment.durum}}</td>
+								
+								<td><button type="button" class="btn btn-danger" {{ action 'updatePayment' payment }}>
+									{{ i18n 'discourse-money.update' }}
+								</button></td>
+								 
+								<td><button type="button" class="btn btn-danger" {{ action 'deletePayment' payment }}>
+									{{ i18n 'discourse-money.delete' }}
+								  </button></td>	
+							</tr>
+						{{/if}}
+						
+					  {{/each}}
+					</tbody>
+				</table>
+		
+	</div>
+{{/if}}

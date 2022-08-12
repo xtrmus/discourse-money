@@ -1,0 +1,16 @@
+{{#if siteSettings.money_enabled}}
+	{{#if this.currentUser.admin}}
+	  <div class="control-group moneys">
+		<label class="control-label">{{i18n "discourse-money.parayi_ayarla"}}</label>
+		<div class="controls bio-composer input-xxlarge">
+		  <label class="text-label">
+			  {{input
+				type="text"
+				class="input-xxlarge"
+				value=model.custom_fields.money_value
+			  }}
+			</label>
+		</div>
+	  </div>
+	{{/if}}
+{{/if}}

@@ -1,0 +1,26 @@
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
+#
+# To work with us on translations, join this project:
+# https://translate.discourse.org/
+
+tr_TR:
+    js:
+        discourse-money:
+          enable_signatures: "Enable Signatures"
+          title: "SorHadi Para Eklentisi"
+          mevcut_para: "Bakiye (TL)"
+          parayi_ayarla: "Bakiye Ayarla"
+          paracek: "Para Çek"
+          kullaniciadi: "Kullanıcı Adı"
+          adsoyad: "Adınız ve Soyadınız"
+          paramiktari: "Kaç TL Çekmek İstiyorsunuz?"
+          ibanpapara: "IBAN/Papara"
+          hesapno: "IBAN/Papara Numaranız"
+          durum: "Durum"
+          update: "Ödeme Yapıldı"
+          delete: "Sil"
+          paracekmebutonu: "Para Çek"
+          odemeyap: "Ödeme Yap"
+          
+          

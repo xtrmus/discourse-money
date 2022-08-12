@@ -1,0 +1,10 @@
+{{#if siteSettings.money_enabled}}
+	{{#if (eq this.model.username this.currentUser.username)}}	
+			{{#link-to "paracek"}}{{d-icon "check"}}{{i18n "discourse-money.paracek"}}{{/link-to}}
+	{{/if}}
+	
+	{{#if this.currentUser.admin}}
+		{{#link-to "paracek"}}{{d-icon "check"}}{{i18n "discourse-money.paracek"}}{{/link-to}}
+		{{#link-to "odemeyap"}}{{d-icon "check"}}{{i18n "discourse-money.odemeyap"}}{{/link-to}}
+	{{/if}}
+{{/if}}

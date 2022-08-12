@@ -1,0 +1,7 @@
+plugins:
+  money_enabled:
+    default: true
+    client: true
+  money_default:
+    default: false
+    client: true

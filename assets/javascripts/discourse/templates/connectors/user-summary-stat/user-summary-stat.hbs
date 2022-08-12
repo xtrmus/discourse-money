@@ -1,0 +1,9 @@
+{{#if siteSettings.money_enabled}}
+	  <div class="control-group moneys">
+		<div class="controls bio-composer input-xxlarge">
+		  <label class="text-label">
+				<UserStat @value={{user.custom_fields.money_value}} @label="discourse-money.mevcut_para" />
+			</label>
+		</div>
+	  </div>
+{{/if}}

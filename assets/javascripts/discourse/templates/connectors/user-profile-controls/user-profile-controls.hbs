@@ -1,0 +1,16 @@
+{{#if siteSettings.money_enabled}}
+	  <li class="control-group moneys">
+	  
+			{{#if (eq this.model.username this.currentUser.username)}} 
+					<button class="btn-primary compose-pm btn btn-icon-text boldButton">
+						<LinkTo class="paracekBtn" @route="paracek">{{model.custom_fields.money_value}} {{i18n 'discourse-money.mevcut_para'}}</LinkTo>
+					</button>
+			{{/if}}
+			
+				{{#unless (eq this.model.username this.currentUser.username)}}  
+					<button class="btn-primary compose-pm btn btn-icon-text boldButton">
+							<UserStat @value={{model.custom_fields.money_value}} @label="discourse-money.mevcut_para"  />
+					</button>
+				{{/unless}}
+	  </li>
+{{/if}}

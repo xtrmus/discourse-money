@@ -1,0 +1,7 @@
+en:
+  js:
+    discourse-money:
+      enable_signatures: "Enable Signatures"
+      title: "SorHadi Para Eklentisi"
+      mevcut_para: "Bakiye (TL)"
+      parayi_ayarla: "Bakiye Ayarla"

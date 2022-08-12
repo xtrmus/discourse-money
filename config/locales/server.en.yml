@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    money_extension_enabled: "Enable user-made signatures below posts?"
+    money_default: "Make signatures visible by default. This makes signatures visible for anonymous visitors as well."
