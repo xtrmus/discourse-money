@@ -4,7 +4,7 @@
 # about: SorHadi Para Eklentisi
 # version: 1.0.0
 # author: Alshain <xtrmus2319@gmail.com>
-# url: https://github.com/discourse/discourse-signatures
+# url: https://github.com/discourse/discourse-money
 # transpile_js: true
 
 enabled_site_setting :money_enabled
