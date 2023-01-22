@@ -14,9 +14,6 @@ DiscoursePluginRegistry.serialized_current_user_fields << "money_value"
 
 load File.expand_path('../app/payment_store.rb', __FILE__)
 
-register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/money-preferences.hbs"
-register_asset "javascripts/discourse/templates/connectors/user-summary-stat/user-summary-stat.hbs"
-register_asset "javascripts/discourse/templates/connectors/user-profile-controls/user-profile-controls.hbs"
 register_asset "stylesheets/common/money.scss"
 
 after_initialize do
